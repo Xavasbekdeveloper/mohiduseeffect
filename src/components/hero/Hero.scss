@@ -1,0 +1,144 @@
+.hero {
+    padding: 102px 0;
+    background-color: #000;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 47px;
+    }
+
+    &__title {
+        max-width: 457px;
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 80.32px;
+    }
+
+    &__desc {
+        max-width: 400px;
+        color: #8B8E99;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.08px;
+    }
+
+    &__inputs {
+        padding: 7px 9px;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    &__search-input {
+        padding: 13px 0;
+        padding-left: 30px;
+        background: url(../../assets/icons/search.svg) no-repeat;
+        background-size: 21px 21px;
+        background-position: left center;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.08px;
+        color: #8B8E99;
+
+        &::placeholder {
+            color: #8B8E99;
+        }
+    }
+
+    &__search-btn {
+        padding: 10px 14px;
+        border: none;
+        border-radius: 6px;
+        background: #3858D6;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22.59px;
+    }
+
+    &__right {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero {
+
+        &__title {
+            font-size: 54px;
+        }
+
+        &__desc {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 985px) {
+    .hero {
+
+        &__title {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        &__desc {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .hero {
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__left,
+        &__right {
+            width: 100%;
+        }
+
+        &__left {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 413px) {
+    .hero {
+        &__inputs {
+            padding: 7px 5px;
+        }
+
+        &__search-input,
+        &__search-btn {
+            font-size: 11px;
+        }
+
+        &__search-input {
+            padding-left: 24px;
+        }
+
+        &__search-btn {
+            padding: 6px 8px;
+        }
+    }
+}

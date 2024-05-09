@@ -1,0 +1,114 @@
+.about {
+    padding: 73px 0;
+
+    &__text {
+        margin-bottom: 5px;
+        color: #3858D6;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 54px;
+        color: #1E1D1D;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.57px;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 47px;
+        margin-bottom: 42px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        border-radius: 22px;
+        background-color: #f6f6f6;
+        padding: 30px 38px;
+
+        &__img {
+            img {
+                // width: 100%;
+            }
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            color: #1E1D1D;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29.05px;
+        }
+
+        &__desc {
+            margin-bottom: 9px;
+            color: #8B8E99;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.36px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+
+        div {
+            width: 18px;
+            height: 18px;
+            background-color: #d9d9d9;
+            border-radius: 50%;
+
+            &:last-child {
+                background-color: #3858D6;
+            }
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .about {
+        &__card {
+            flex-direction: column;
+
+            &__info {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        &__cards {
+            flex-direction: column;
+        }
+
+        &__card {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+
+        &__card {
+            flex-direction: column;
+        }
+    }
+}
